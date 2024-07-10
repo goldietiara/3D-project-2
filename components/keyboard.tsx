@@ -20,7 +20,7 @@ export default function Keyboard() {
           const keyboard = app.findObjectByName("keyboard");
 
           if (keyboard) {
-            gsap.set(keyboard.rotation, { x: -Math.PI / 14, z: Math.PI / 36 });
+            // gsap.set(keyboard.rotation, { x: -Math.PI / 14, z: Math.PI / 36 });
             gsap.set(keyboard.scale, { x: 1.7, y: 1.7, z: 1.7 });
             gsap.set(keyboard.position, { x: 400, y: -100 });
 
@@ -80,9 +80,13 @@ export default function Keyboard() {
                   scrub: true,
                 },
               })
-              .to(keyboard.rotation, { x: Math.PI / 36, y: -Math.PI / 10 }, 0)
-              .to(keyboard.position, { x: 150, y: 50 }, 0)
-              .to(keyboard.scale, { x: 0.8, y: 0.8, z: 0.8 }, 0);
+              .to(
+                keyboard.rotation,
+                { x: Math.PI / 36, y: 4.6, z: Math.PI / 100 },
+                0
+              )
+              .to(keyboard.position, { x: 300, y: 0 }, 0)
+              .to(keyboard.scale, { x: 1.8, y: 1.8, z: 1.8 }, 0);
 
             gsap
               .timeline({
@@ -93,6 +97,7 @@ export default function Keyboard() {
                   scrub: true,
                 },
               })
+              .to(keyboard.rotation, { y: 5 }, 0)
               .to(keyboard.position, { x: 0, y: 100 }, 0)
               .to(keyboard.scale, { x: 1, y: 1, z: 1 }, 0);
           }

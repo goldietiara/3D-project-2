@@ -105,7 +105,7 @@ export default function LandingPage() {
         className={`${animate3} h-screen w-full relative left-3 z-40 transition-all ease-in-out delay-500 duration-150`}
         id="section3"
       >
-        <div className=" w-1/3 h-full pt-40 px-20 flex flex-col gap-6 items-center justify-center">
+        <div className=" w-1/3 h-full px-20 flex flex-col gap-6 items-center justify-top">
           <h1 className=" font-semibold text-4xl pb-10">
             CUSTOMIZE ALL THE WAY.
           </h1>

@@ -14,7 +14,6 @@ export default function Keyboard() {
       const canvas = canvasRef.current;
       const app = new Application(canvas);
       app
-        // .load("https://prod.spline.design/ZZOWNi4tS7p8xxOs/scene.splinecode")
         .load("https://prod.spline.design/aWTHzrf7Pqnw6OLm/scene.splinecode")
         .then(() => {
           const keyboard = app.findObjectByName("keyboard");

@@ -69,7 +69,7 @@ export default function LandingPage() {
         </a>
       </nav>
       <div
-        className={`${barAnimation} h-screen bg-black fixed top-0 right-0 z-0 flex justify-center items-center transition-all ease-in-out duration-500`}
+        className={`${barAnimation} h-screen bg-black fixed top-0 right-0 z-0 flex justify-center items-center transition-all ease-in-out duration-200`}
       ></div>
       <section
         className=" h-screen w-full flex px-5 items-center relative z-40"
@@ -85,10 +85,10 @@ export default function LandingPage() {
         </h1>
       </section>
       <section
-        className={`${animate2} h-screen w-full flex justify-end relative z-40 transition-all ease-in delay-500 duration-150`}
+        className={`${animate2} h-screen w-full flex justify-end relative z-40 transition-all ease-in delay-300 duration-150`}
         id="section2"
       >
-        <div className=" w-1/3 h-full px-20 flex flex-col gap-6 items-center justify-top">
+        <div className=" w-1/3 h-full px-20 pt-10 flex flex-col gap-6 items-center justify-top">
           <h1 className=" font-semibold text-4xl pb-10">
             CUSTOMIZE ALL THE WAY.
           </h1>
@@ -102,7 +102,7 @@ export default function LandingPage() {
         </div>
       </section>
       <section
-        className={`${animate3} h-screen w-full relative left-3 z-40 transition-all ease-in-out delay-500 duration-150`}
+        className={`${animate3} h-screen w-full relative left-3 z-40 transition-all ease-in-out delay-300 duration-150`}
         id="section3"
       >
         <div className=" w-1/3 h-full px-20 flex flex-col gap-6 items-center justify-top">
@@ -119,7 +119,7 @@ export default function LandingPage() {
         </div>
       </section>
       <section
-        className={`${animate4} h-screen w-full relative z-40 transition-all ease-in-out delay-500 duration-150 flex items-end justify-center`}
+        className={`${animate4} h-screen w-full relative z-40 transition-all ease-in-out delay-300 duration-150 flex items-end justify-center`}
         id="section4"
       >
         <p className="pb-20">By Goldie Tiara </p>

@@ -69,10 +69,10 @@ export default function LandingPage() {
         </a>
       </nav>
       <div
-        className={`${barAnimation} h-screen bg-black fixed top-0 right-0 z-0 flex justify-center items-center transition-all ease-in-out duration-200`}
+        className={`${barAnimation} h-screen bg-black fixed top-0 right-0 z-0 flex justify-center items-center transition-all ease-in-out duration-500`}
       ></div>
       <section
-        className=" h-screen w-full flex px-5 items-center relative z-40"
+        className=" h-screen w-full flex px-5 items-center relative z-40 "
         id="section1"
       >
         <h1 className=" flex flex-col gap-5 text-9xl font-extrabold">
@@ -85,16 +85,14 @@ export default function LandingPage() {
         </h1>
       </section>
       <section
-        className={`${animate2} h-screen w-full flex justify-end relative z-40 transition-all ease-in delay-300 duration-150`}
+        className={`${animate2} h-screen w-full flex justify-end relative z-40 transition-all ease-in delay-300 duration-150 snap-y snap-mandatory`}
         id="section2"
       >
-        <div className=" w-1/3 h-full px-20 pt-10 flex flex-col gap-6 items-center justify-top">
-          <h1 className=" font-semibold text-4xl pb-10">
-            CUSTOMIZE ALL THE WAY.
-          </h1>
+        <div className=" w-1/3 h-full px-20 pt-24 flex flex-col gap-6 items-center justify-top snap-y snap-mandatory">
+          <h1 className=" font-semibold text-4xl pb-10">PERFECT PRECISION.</h1>
           <p>
-            It's all yours! Change the colors as you like. Make them purple,
-            green, red, anything.
+            With these keyboards, you'll get proper bounce, a bit of *click*,
+            and lots of satisfaction.
           </p>
           <div className="w-full text-center py-4 px-8 rounded-md border-white/50 border-[1px] hover:border-white hover:cursor-pointer">
             Customize a Keyboard

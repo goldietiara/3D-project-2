@@ -19,14 +19,17 @@ export default function Keyboard() {
           const keyboard = app.findObjectByName("keyboard");
 
           if (keyboard) {
-            // gsap.set(keyboard.rotation, { x: -Math.PI / 14, z: Math.PI / 36 });
-            gsap.set(keyboard.scale, { x: 1.7, y: 1.7, z: 1.7 });
-            gsap.set(keyboard.position, { x: 400, y: -100 });
+            gsap.set(keyboard.rotation, {
+              x: -0,
+              y: -0,
+              z: Math.PI / 2,
+            });
+            gsap.set(keyboard.scale, { x: 1.4, y: 1.4, z: 1.4 });
+            gsap.set(keyboard.position, { x: 400, y: -50 });
 
             let rotateKeyboard = gsap.to(keyboard.rotation, {
+              x: -0,
               y: Math.PI * 2 + keyboard.rotation.y,
-              x: 0,
-              z: 0,
               duration: 10,
               repeat: -1,
               ease: "none",
@@ -47,11 +50,11 @@ export default function Keyboard() {
 
                     interval = setInterval(() => {
                       app.emitEvent("keyDown", "keyboard");
-                    }, 1500);
+                    }, 3600);
 
                     rotateKeyboard.pause();
                     gsap.to(keyboard.rotation, {
-                      y: Math.PI / 12,
+                      y: Math.PI / 2,
                       duration: 1,
                     });
                   },
@@ -62,9 +65,13 @@ export default function Keyboard() {
                   },
                 },
               })
-              .to(keyboard.rotation, { x: -Math.PI / 14, z: Math.PI / 36 }, 0)
-              .to(keyboard.position, { x: -300, y: -50 }, 0)
-              .to(keyboard.scale, { x: 2.3, y: 2.3, z: 2.3 }, 0);
+              .to(
+                keyboard.rotation,
+                { x: -0, y: Math.PI / 1.6, z: Math.PI / 2 },
+                0
+              )
+              .to(keyboard.position, { x: -300, y: 0 }, 0);
+            gsap.set(keyboard.scale, { x: 1.4, y: 1.4, z: 1.4 });
 
             gsap
               .timeline({
@@ -81,11 +88,11 @@ export default function Keyboard() {
               })
               .to(
                 keyboard.rotation,
-                { x: Math.PI / 36, y: 4.6, z: Math.PI / 100 },
+                { x: -0, y: Math.PI / 2.8, z: Math.PI / 2 },
                 0
               )
-              .to(keyboard.position, { x: 300, y: 0 }, 0)
-              .to(keyboard.scale, { x: 1.8, y: 1.8, z: 1.8 }, 0);
+              .to(keyboard.position, { x: 300, y: 0 }, 0);
+            gsap.set(keyboard.scale, { x: 1.4, y: 1.4, z: 1.4 });
 
             gsap
               .timeline({
@@ -96,8 +103,8 @@ export default function Keyboard() {
                   scrub: true,
                 },
               })
-              .to(keyboard.rotation, { y: 5 }, 0)
-              .to(keyboard.position, { x: 0, y: 100 }, 0)
+              .to(keyboard.rotation, { x: 0.4, y: 0.3, z: 0 }, 0)
+              .to(keyboard.position, { x: 0, y: 0 }, 0)
               .to(keyboard.scale, { x: 1, y: 1, z: 1 }, 0);
           }
         });

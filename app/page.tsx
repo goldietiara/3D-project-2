@@ -3,7 +3,7 @@ import LandingPage from "@/components/landing-page";
 
 export default function Home() {
   return (
-    <main className=" font-mono font-light relative text-white bg-blue-600">
+    <main className=" font-mono font-light relative text-white bg-blue-800 scroll-smooth">
       <div className=" fixed top-0 left-0 z-50 h-full w-full">
         <Keyboard />
       </div>
